@@ -2,239 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Samantha Cleans | Ft. Worth House Cleaning</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Top-rated, eco-friendly house cleaning in Ft. Worth, TX. Flat-rate pricing, online booking, 100 % happiness guarantee.">
+  <title>Samantha Cleans | Ft. Worth, TX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="description" content="Premium eco-friendly house cleaning in Ft. Worth. Book in 60 s, flat-rate pricing, 5-star staff.">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Vercel analytics (optional) -->
-  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="widget.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap">
-      <h1 class="logo">Samantha Cleans</h1>
-      <nav aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="btn">Book Now</a>
-      </nav>
+  <header class="header">
+    <div class="header__bar">
+      <span class="logo">Samantha Cleans</span>
+      <button class="nav__toggle" aria-label="open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="nav">
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#pricing" class="nav__link">Pricing</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link cta">Book Now</a>
+    </nav>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="wrap hero__inner">
-        <div class="hero__text">
-          <h2>Spotless Homes, Zero Hassle.</h2>
-          <p>Reliable, eco-friendly house cleaning in Ft. Worth & surrounding areas. Flat-rate pricing. Instant online booking. 100 % happiness guarantee.</p>
-          <button class="btn btn--large open-widget">Get Instant Quote</button>
-        </div>
-        <div class="hero__img">
-          <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=800&q=60" alt="Bright clean kitchen" width="800" height="600" loading="eager" />
-        </div>
+      <div class="hero__bg"></div>
+      <div class="hero__content">
+        <h1 class="hero__title">A sparkling home<br />is one tap away.</h1>
+        <p class="hero__sub">Eco-friendly products. Vetted pros. Flat-rate pricing. Available tomorrow.</p>
+        <button class="btn btn--large open-widget">Get Instant Quote</button>
       </div>
+      <div class="hero__badge">
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f2?auto=format&fit=crop&w=200&h=200&q=60" alt="5-star reviews" width="200" height="200" />
+        <span>4.9 ★ Google Reviews</span>
+      </div>
+    </section>
+
+    <!-- TRUST PILLARS -->
+    <section class="pillars">
+      <article class="pillar">
+        <div class="pillar__icon">🌿</div>
+        <h3>Non-toxic Products</h3>
+        <p>Safe for babies, pets & planet.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar__icon">🔐</div>
+        <h3>Insured & Bonded</h3>
+        <p>$1 M coverage. Background-checked crews.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar__icon">⚡</div>
+        <h3>60-Second Booking</h3>
+        <p>Real-time calendar. Apple-Pay / Card.</p>
+      </article>
     </section>
 
     <!-- SERVICES -->
     <section id="services" class="services">
-      <div class="wrap">
-        <h2>What We Clean</h2>
-        <div class="grid">
-          <article>
+      <h2>Detail-Oriented Packages</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=60" alt="Standard clean" />
+          <div class="service-card__body">
             <h3>Standard Clean</h3>
             <ul>
-              <li>Kitchen & bathrooms sanitized</li>
-              <li>Dust & vacuum all rooms</li>
-              <li>Floor washing</li>
-              <li>Bed-making</li>
+              <li>Kitchen & bath sanitized</li>
+              <li>Dust, vacuum, mop</li>
+              <li>Bed-making & trash out</li>
             </ul>
-          </article>
-          <article>
+            <span class="price-tag">From $119</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=60" alt="Deep clean" />
+          <div class="service-card__body">
             <h3>Deep Clean</h3>
             <ul>
               <li>Everything in Standard +</li>
               <li>Inside cabinets & fridge</li>
-              <li>Baseboards & window sills</li>
-              <li>Light fixtures</li>
+              <li>Baseboards & fixtures</li>
             </ul>
-          </article>
-          <article>
+            <span class="price-tag">+40 %</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=600&q=60" alt="Move clean" />
+          <div class="service-card__body">
             <h3>Move-In / Out</h3>
             <ul>
-              <li>Full deep clean</li>
+              <li>Full deep scope</li>
               <li>Inside drawers & closets</li>
-              <li>Appliance interiors</li>
-              <li>Ready for inspection</li>
+              <li>Ready for walk-through</li>
             </ul>
-          </article>
+            <span class="price-tag">+60 %</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PRICING -->
+    <!-- PRICING TABLE -->
     <section id="pricing" class="pricing">
-      <div class="wrap">
-        <h2>Flat-Rate Pricing</h2>
-        <p class="sub">No hidden fees. Tip included.</p>
-        <div class="grid">
-          <div class="card">
-            <h3>Studio–1 BR</h3>
-            <div class="price">$119</div>
-            <p>Standard clean</p>
-          </div>
-          <div class="card">
-            <h3>2 Bed</h3>
-            <div class="price">$149</div>
-            <p>Standard clean</p>
-          </div>
-          <div class="card">
-            <h3>3 Bed</h3>
-            <div class="price">$179</div>
-            <p>Standard clean</p>
-          </div>
-          <div class="card">
-            <h3>4+ Bed</h3>
-            <div class="price">$219</div>
-            <p>Standard clean</p>
-          </div>
+      <h2>Up-Front Pricing</h2>
+      <p class="lead">No surprises. Tax & tip included.</p>
+      <div class="pricing-table">
+        <div class="plan">
+          <h4>Studio–1 BR</h4>
+          <div class="plan__price">$119</div>
         </div>
-        <p class="note">Deep clean add-on +40 %. Move-in/out +60 %. <a href="#contact" class="open-widget">Build custom quote →</a></p>
+        <div class="plan">
+          <h4>2 Bed</h4>
+          <div class="plan__price">$149</div>
+        </div>
+        <div class="plan">
+          <h4>3 Bed</h4>
+          <div class="plan__price">$179</div>
+        </div>
+        <div class="plan">
+          <h4>4+ Bed</h4>
+          <div class="plan__price">$219</div>
+        </div>
       </div>
+      <p class="note">Extras: Inside fridge +$20, oven +$20, interior windows +$30. <button class="link open-widget">Build custom quote →</button></p>
     </section>
 
-    <!-- TRUST -->
-    <section class="trust">
-      <div class="wrap grid">
-        <div>
-          <h3>Eco-Friendly Products</h3>
-          <p>Safe for kids, pets, and planet.</p>
-        </div>
-        <div>
-          <h3>Vetted & Insured</h3>
-          <p>Background-checked pros, $1 M insurance.</p>
-        </div>
-        <div>
-          <h3>100 % Happiness</h3>
-          <p>Not thrilled? We’ll re-clean free.</p>
-        </div>
+    <!-- SOCIAL PROOF -->
+    <section class="reviews">
+      <h2>Neighbourhood <span class="green">Love</span></h2>
+      <div class="review-strip">
+        <figure class="review">
+          <blockquote>“Best cleaning I’ve had in 15 years. They even tucked the sofa cushions like a hotel.”</blockquote>
+          <figcaption>Amanda R.<span class="stars">★★★★★</span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“Booking took 30 seconds and the team arrived early. White-glove detail.”</blockquote>
+          <figcaption>Carlos M.</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“Eco smell is amazing. Safe for our newborn and Frenchie.”</blockquote>
+          <figcaption>Lauren T.</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="about">
-      <div class="wrap">
+      <div class="about__img"></div>
+      <div class="about__text">
         <h2>Hi, I’m Samantha</h2>
-        <div class="grid">
-          <div>
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=60" alt="Owner Samantha smiling with supplies" width="600" height="600" loading="lazy" />
-          </div>
-          <div>
-            <p>I started Samantha Cleans in 2021 after 10 years of five-star hotel housekeeping. My small, local team and I bring that same white-glove standard to every Ft. Worth home. We’re fully insured, use only eco products, and—most importantly—we show up when we say we will.</p>
-            <p><strong>Ready for a spotless home without lifting a finger?</strong></p>
-            <button class="btn open-widget">Book Online in 60 Seconds</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="reviews">
-      <div class="wrap">
-        <h2>What Neighbors Say</h2>
-        <div class="review-grid">
-          <blockquote>“White-glove detail at an honest price. I’ve used three other services—Samantha is the first that actually shows up on time.”<cite>— Amanda R., Fairmount</cite></blockquote>
-          <blockquote>“The eco products are a must with our new baby. House smells amazing and I don’t worry about chemicals.”<cite>— Carlos M., Arlington Heights</cite></blockquote>
-          <blockquote>“Booking literally took 30 seconds and the quote was exact. Highly recommend for busy professionals.”<cite>— Lauren T., West 7th</cite></blockquote>
-        </div>
+        <p>I spent a decade running five-star hotel suites before bringing that same standard to Ft. Worth homes. My team is small, local, and obsessed with the details—folded towel ends, vacuum lines, chemical-free shine.</p>
+        <p>We’re fully insured, carbon-neutral, and donate 1 % of every clean to the local women’s shelter.</p>
+        <button class="btn open-widget">Book Online</button>
       </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq">
-      <div class="wrap">
-        <h2>Quick Answers</h2>
-        <dl>
-          <dt>Do you bring supplies?</dt><dd>Yes, all eco products + equipment. You supply nothing.</dd>
-          <dt>Which areas do you serve?</dt><dd>Ft. Worth and 15-mi radius including Arlington, Benbrook, Saginaw, Haltom City.</dd>
-          <dt>Can I trust your cleaners?</dt><dd>Every tech passes background + reference checks and is covered by $1 M liability.</dd>
-          <dt>What if I’m not happy?</dt><dd>Let us know within 24 h and we’ll re-clean the area free.</dd>
-        </dl>
-      </div>
+      <h2>Questions?</h2>
+      <details>
+        <summary>Do you bring everything?</summary>
+        <p>Yes—eco products, HEPA vacuums, micro-fibre cloths. You supply zero.</p>
+      </details>
+      <details>
+        <summary>Which areas do you cover?</summary>
+        <p>Ft. Worth plus 15-mile radius: Arlington, Benbrook, Saginaw, Haltom City, NRH, Keller.</p>
+      </details>
+      <details>
+        <summary>Can I trust your staff?</summary>
+        <p>Every cleaner passes county, state & federal background checks. We carry $1 M liability.</p>
+      </details>
+      <details>
+        <summary>What if I’m not happy?</summary>
+        <p>24-hour rework guarantee. We’ll re-clean the area free or refund—your choice.</p>
+      </details>
     </section>
 
-    <!-- CONTACT / BOOKING -->
+    <!-- CONTACT -->
     <section id="contact" class="contact">
-      <div class="wrap">
-        <h2>Book Your Clean</h2>
-        <p>Pick a date, get instant confirmation, pay securely online.</p>
-        <button class="btn btn--large open-widget">Start Booking →</button>
-      </div>
+      <h2>Ready for spotless?</h2>
+      <p>Pick your date, checkout in seconds, get instant confirmation.</p>
+      <button class="btn btn--large open-widget">Book Now</button>
     </section>
   </main>
 
+  <!-- PHONE STICKY BAR -->
+  <div class="sticky-bar">
+    <a href="tel:+12345678901" class="sticky-bar__call">Call</a>
+    <button class="btn btn--full open-widget">Get Quote</button>
+  </div>
+
   <footer>
-    <div class="wrap footer__inner">
+    <div class="footer__inner">
       <div>
-        <h3>Samantha Cleans</h3>
-        <p>Ft. Worth, TX<br />Mon–Sat 8 am–6 pm</p>
-        <p><a href="tel:+12345678901">(234) 567-8901</a></p>
+        <span class="logo">Samantha Cleans</span>
+        <p>Ft. Worth, TX<br>Mon–Sat 8 am–6 pm</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
-        <nav aria-label="Footer">
+        <nav class="footer__nav">
           <a href="#services">Services</a>
           <a href="#pricing">Pricing</a>
           <a href="#about">About</a>
-          <a href="#contact">Book Now</a>
+          <a href="#contact">Book</a>
         </nav>
       </div>
       <div>
-        <h4>Follow Us</h4>
-        <a aria-label="Facebook" href="https://facebook.com/samanthacleans" target="_blank" rel="noopener">FB</a>
-        <a aria-label="Instagram" href="https://instagram.com/samanthacleans" target="_blank" rel="noopener">IG</a>
+        <p>© 2025 Samantha Cleans</p>
+        <p>Bonded & insured.</p>
       </div>
     </div>
-    <p class="copyright">© 2025 Samantha Cleans. All rights reserved.</p>
   </footer>
-
-  <!-- BOOKING WIDGET -->
-  <div id="widget" class="widget hidden">
-    <div class="widget__card">
-      <button class="widget__close" aria-label="Close">&times;</button>
-      <h3>Instant Quote</h3>
-      <form id="bookingForm">
-        <label>
-          Zip code
-          <input type="text" pattern="[0-9]{5}" maxlength="5" required placeholder="76104" name="zip" />
-        </label>
-        <label>
-          Home size
-          <select name="size" required>
-            <option value="" disabled selected>Select…</option>
-            <option value="119">Studio–1 BR ($119)</option>
-            <option value="149">2 Bed ($149)</option>
-            <option value="179">3 Bed ($179)</option>
-            <option value="219">4+ Bed ($219)</option>
-          </select>
-        </label>
-        <label>
-          Service type
-          <select name="type" required>
-            <option value="1">Standard clean</option>
-            <option value="1.4">Deep clean (+40 %)</option>
-            <option value="1.6">Move-in/out (+60 %)</option>
-          </select>
-        </label>
-        <output></output>
-        <button type="submit" class="btn btn--full">Book This Clean</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="widget.js" defer></script>
 </body>
 </html>
